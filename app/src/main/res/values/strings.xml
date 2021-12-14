@@ -3,4 +3,22 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="go_to_chat">Go to Chat!</string>
+    <string name="articulate_english_practice_chatbot">Articulate English practice chatbot</string>
+    <string name="you_will_be_chatting_with_a_movie_recommendation_chatbot">You will be chatting with a movie recommendation chatbot.</string>
+    <string name="the_more_you_talk_the_more_you_have_the_opportunity_to">The more you talk, the more you have the opportunity to</string>
+    <string name="improve_your_communication_skills">improve your communication skills.</string>
+    <string name="we_will_give_you_the_bonus_if_you_express_more_for">We will give you the bonus if you express more for</string>
+    <string name="after_talking_with_the_chatbot_please_wait_a_little_bit_while">After talking with the chatbot, please wait a little bit while</string>
+    <string name="we_generate_the_grammar_feedback_for_you">we generate the grammar feedback for you.</string>
+    <string name="each_conversation">each conversation.</string>
+    <string-array name="welcome">
+        <item>Hey！</item>
+        <item>How are You?</item>
+        <item>Today is sunny.</item>
+        <item>I want to talk with you.</item>
+        <item>Bye~</item>
+        <item>Good luck!</item>
+        <item>Have you had lunch yet?</item>
+    </string-array>
 </resources>
