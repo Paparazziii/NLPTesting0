@@ -116,7 +116,7 @@ public class ChatActivity extends AppCompatActivity {
             return;
         }
         et_send_msg.setText("");
-        sendMsg=sendMsg.replaceAll(" ","").replaceAll("\n","").trim();
+        sendMsg=sendMsg.replaceAll(" "," ").replaceAll("\n","").trim();
         ChatBean chatBean=new ChatBean();
         chatBean.setMessage(sendMsg);
         chatBean.setState(ChatBean.SEND);//SEND represent user message
@@ -166,65 +166,6 @@ public class ChatActivity extends AppCompatActivity {
             }
         });
 
-    /**   String userID = "userID="+uuid.toString();
-        String text = "text="+send;
-        String url = URL_KEY+userID+"&"+text;
-        
-        Call<Decode> api = Retrofit_r.getClient(url).api.saveResult();
-        api.enqueue(new Callback<Decode>() {
-            @Override
-            public void onResponse(Call<Decode> call, Response<Decode> response) {
-                if (response.isSuccessful()){
-                    String generation = response.body().getGeneration();
-                    String template = response.body().getTemplate();
-                    String res = generation + template;
-
-                    if (res.equals("")){
-                        res="NO DATA";
-                    }
-                    Log.d("ChatActivity","onResponse: "+response.body().toString());
-                    showData(res);
-                //Message msg = new Message();
-                //msg.what = MSG_OK;
-                //msg.obj=res;
-                //mHandler.sendMessage(msg);
-                }
-                else{
-                    Toast.makeText(ChatActivity.this,"Failure0",Toast.LENGTH_SHORT).show();
-                    Log.d("ChatActivity","ERROR0");
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Decode> call, Throwable t) {
-                Toast.makeText(ChatActivity.this,"Failure",Toast.LENGTH_SHORT).show();
-                Log.d("ChatActivity","ERROR1");
-            }
-        });
-        //int position=(int)(Math.random()*welcome.length-1);
-        //showData(welcome[position]);**/
-
-
-
-        /***OkHttpClient okHttpClient=new OkHttpClient();
-        Request request =new Request.Builder().url(WEB_SITE+"?key="+KEY+"&info="+sendMsg).build();
-        Call call=okHttpClient.newCall(request);
-        //connect to server
-        call.enqueue(new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-
-            }
-
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                String res=response.body().string();
-                Message msg=new Message();
-                msg.what=MSG_OK;
-                msg.obj=res;
-                mHandler.sendMessage(msg);
-            }
-        });"*/
     }
 
     class MHandler extends Handler {
